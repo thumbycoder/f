@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Pointe</title>
+  <div class="header">
+      <h1>Minecraft</h1>
+      <p>Hacked clients give you bad fps. Resedent has the best fps.</p>
+  </div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        #video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+        .button img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-background">
+        <video autoplay loop muted>
+            <source src="background.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='/res'">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAaVBMVEUBAQH///8AAAD/+/////3+/P3s7OzT09N9fX0oKCijo6Otra2xsbH39/dOTk5LS0tlZWUjIyMxMTGJiYkjIyBycnJgYGDt7unl5eVGRkYXFxcaGxi/v7+dnZ02NjaTk5MNDQ0/Pz/c3NyBi08XAAAC8UlEQVR4nO3c6XKiQBRAYUFao4hCjEYcx8S8/0MOq1HAcKvHhoacU1bFPyxfmkUKdDIhIiIiIiIiIiIiIiIiIiIica6wbmelazlG0SJ5pUV5i3pHwSoks2qYsiwqOxrEnD98f5W80vy8Vb3dpwCz2DZMWeaXbQWz0sWEgSNoFbWugeuuv1rn43nOV/ustDH7WXBNqWmad5cUM3HX8+q6p3NTaddFvHvzTjAqmOapp2IyTXDlGMZ4xWKyJRcbw5MwecWAl5g/JjFODaO1z9iE8ZQpjKpg3sxjHGOY6sgYxXjp3pkdc5Kd1czIZJp0KcYxqjiIPXD8/8gUoGw5xveZjjBT85iwK0xx0nFMbmbdYDJQV5gf1wLMA8x0LBg1ppHpBKO6wijzmEdn/WdjcpFj8hKge8xoRkaNCWN8ZASW52EcMGDAgAEDBowYY/SDJhgwYHQw6scrgeWn4C7y5hujvivuyZUZxcTzmaDlerNuaxOeJLM6Tcxh3CiO401aHJfval1Wktu4wfb1Cnvc2eRzAKJ8T4Tp+aEGIdkvb262YHpeT1GuLxgYMD0ExtbA2BoYW0swYzppjuoTwJgwqzFtZsPFNF0CtEocx2u6BLDQoo/pm+Nedi+VdifBvUIv8MNdpXDRN2YpGIYmTMNeNXvpeWjcZSA5EDdg6pMlmF4tKUZrZBzPqf0LhotpCAwYMGDAPA2jc9K0FaP1CQAMGDDjwDxHAgbM78GM6gAABgwYMGDAgAEDBgyY342RfJdzMJjg5Le3qj+JbyXmsBY8r9zwK1o2YGor9b4vb4Hnf643xN2bd+FhMJjWycCYbmyY2gEAjBWYv1qYCRjTaWP29p00Xc2j2WAwHhhLMYPdzNIDwO2XRtNkI5MczVT543/FdP1jloHSxTj3GCtGpoY5iDazQ3VELcB81PeZeaz3Re1D2PejwG76W9qvt50lvz2dTHe5myqZyVv/j5zrPQT/4GLa+OoSEREREREREREREREREfXWPzYhYf+MTVdRAAAAAElFTkSuQmCC" alt="Project Pointe Icon">
+            Resedent client
+        </button>
+      <button class="button" onclick="window.location.href='/dx'">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAaVBMVEUBAQH///8AAAD/+/////3+/P3s7OzT09N9fX0oKCijo6Otra2xsbH39/dOTk5LS0tlZWUjIyMxMTGJiYkjIyBycnJgYGDt7unl5eVGRkYXFxcaGxi/v7+dnZ02NjaTk5MNDQ0/Pz/c3NyBi08XAAAC8UlEQVR4nO3c6XKiQBRAYUFao4hCjEYcx8S8/0MOq1HAcKvHhoacU1bFPyxfmkUKdDIhIiIiIiIiIiIiIiIiIiIica6wbmelazlG0SJ5pUV5i3pHwSoks2qYsiwqOxrEnD98f5W80vy8Vb3dpwCz2DZMWeaXbQWz0sWEgSNoFbWugeuuv1rn43nOV/ustDH7WXBNqWmad5cUM3HX8+q6p3NTaddFvHvzTjAqmOapp2IyTXDlGMZ4xWKyJRcbw5MwecWAl5g/JjFODaO1z9iE8ZQpjKpg3sxjHGOY6sgYxXjp3pkdc5Kd1czIZJp0KcYxqjiIPXD8/8gUoGw5xveZjjBT85iwK0xx0nFMbmbdYDJQV5gf1wLMA8x0LBg1ppHpBKO6wijzmEdn/WdjcpFj8hKge8xoRkaNCWN8ZASW52EcMGDAgAEDBowYY/SDJhgwYHQw6scrgeWn4C7y5hujvivuyZUZxcTzmaDlerNuaxOeJLM6Tcxh3CiO401aHJfval1Wktu4wfb1Cnvc2eRzAKJ8T4Tp+aEGIdkvb262YHpeT1GuLxgYMD0ExtbA2BoYW0swYzppjuoTwJgwqzFtZsPFNF0CtEocx2u6BLDQoo/pm+Nedi+VdifBvUIv8MNdpXDRN2YpGIYmTMNeNXvpeWjcZSA5EDdg6pMlmF4tKUZrZBzPqf0LhotpCAwYMGDAPA2jc9K0FaP1CQAMGDDjwDxHAgbM78GM6gAABgwYMGDAgAEDBgyY342RfJdzMJjg5Le3qj+JbyXmsBY8r9zwK1o2YGor9b4vb4Hnf643xN2bd+FhMJjWycCYbmyY2gEAjBWYv1qYCRjTaWP29p00Xc2j2WAwHhhLMYPdzNIDwO2XRtNkI5MczVT543/FdP1jloHSxTj3GCtGpoY5iDazQ3VELcB81PeZeaz3Re1D2PejwG76W9qvt50lvz2dTHe5myqZyVv/j5zrPQT/4GLa+OoSEREREREREREREREREfXWPzYhYf+MTVdRAAAAAElFTkSuQmCC" alt="Project Pointe Icon">
+          Dragon X (Hacks) 
+      </button>
+      <button class="button" onclick="window.location.href='/res'">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAaVBMVEUBAQH///8AAAD/+/////3+/P3s7OzT09N9fX0oKCijo6Otra2xsbH39/dOTk5LS0tlZWUjIyMxMTGJiYkjIyBycnJgYGDt7unl5eVGRkYXFxcaGxi/v7+dnZ02NjaTk5MNDQ0/Pz/c3NyBi08XAAAC8UlEQVR4nO3c6XKiQBRAYUFao4hCjEYcx8S8/0MOq1HAcKvHhoacU1bFPyxfmkUKdDIhIiIiIiIiIiIiIiIiIiIica6wbmelazlG0SJ5pUV5i3pHwSoks2qYsiwqOxrEnD98f5W80vy8Vb3dpwCz2DZMWeaXbQWz0sWEgSNoFbWugeuuv1rn43nOV/ustDH7WXBNqWmad5cUM3HX8+q6p3NTaddFvHvzTjAqmOapp2IyTXDlGMZ4xWKyJRcbw5MwecWAl5g/JjFODaO1z9iE8ZQpjKpg3sxjHGOY6sgYxXjp3pkdc5Kd1czIZJp0KcYxqjiIPXD8/8gUoGw5xveZjjBT85iwK0xx0nFMbmbdYDJQV5gf1wLMA8x0LBg1ppHpBKO6wijzmEdn/WdjcpFj8hKge8xoRkaNCWN8ZASW52EcMGDAgAEDBowYY/SDJhgwYHQw6scrgeWn4C7y5hujvivuyZUZxcTzmaDlerNuaxOeJLM6Tcxh3CiO401aHJfval1Wktu4wfb1Cnvc2eRzAKJ8T4Tp+aEGIdkvb262YHpeT1GuLxgYMD0ExtbA2BoYW0swYzppjuoTwJgwqzFtZsPFNF0CtEocx2u6BLDQoo/pm+Nedi+VdifBvUIv8MNdpXDRN2YpGIYmTMNeNXvpeWjcZSA5EDdg6pMlmF4tKUZrZBzPqf0LhotpCAwYMGDAPA2jc9K0FaP1CQAMGDDjwDxHAgbM78GM6gAABgwYMGDAgAEDBgyY342RfJdzMJjg5Le3qj+JbyXmsBY8r9zwK1o2YGor9b4vb4Hnf643xN2bd+FhMJjWycCYbmyY2gEAjBWYv1qYCRjTaWP29p00Xc2j2WAwHhhLMYPdzNIDwO2XRtNkI5MczVT543/FdP1jloHSxTj3GCtGpoY5iDazQ3VELcB81PeZeaz3Re1D2PejwG76W9qvt50lvz2dTHe5myqZyVv/j5zrPQT/4GLa+OoSEREREREREREREREREfXWPzYhYf+MTVdRAAAAAElFTkSuQmCC" alt="Project Pointe Icon">
+          Eaglarcraft (Normal)
+      </button>
+  <style>
+    /* Style the button with your desired hex color */
+    .download-button {
+        background-color: #FF5733; /* Replace with your preferred hex color */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+  </style>
+  </head>
+  <body>
+  <!-- Existing buttons -->
+  <div>
+    <button>Button 1</button>
+  </div>
+  <div>
+    <button>Button 2</button>
+  </div>
+  <div>
+    <button>Button 3</button>
+  </div>
+  <!-- New button for downloading dragonx.html -->
+  <div>
+    <a href="dragonx.html" download="dragonx.html">
+        <button class="download-button">Download dragonx.html</button>
+    </a>
+  </div>
+   <p>Prodject pointe v1.1.</p>
+</body>
+</html>

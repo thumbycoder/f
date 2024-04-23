@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Lock</title>
+    <style>
+        /* Hide the form initially */
+        #keyForm {
+            display: block;
+        }
+        #vipFrame {
+            display: none; /* Initially hide the iframe */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 999999;
+        }
+    </style>
+</head>
+<body>
+    <form id="keyForm">
+        <label for="userKey">Enter the key:</label>
+        <input type="text" id="userKey" name="userKey">
+        <input type="submit" value="Submit">
+    </form>
+
+    <iframe id="vipFrame"></iframe>
+
+    <script>
+        document.getElementById("keyForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const validKeys = ["gh7g5", "nfur6", "jeub3", "jgy39"];
+            const userEnteredKey = document.getElementById("userKey").value;
+
+            if (validKeys.includes(userEnteredKey)) {
+                // Load vip.html in the iframe
+                document.getElementById("vipFrame").src = "vip.html";
+                document.getElementById("vipFrame").style.display = "block"; // Show the iframe
+
+                // Hide the key form
+                document.getElementById("keyForm").style.display = "none";
+            } else {
+                alert("Invalid key. Access denied.");
+            }
+        });
+    </script>
+</body>
+</html>
